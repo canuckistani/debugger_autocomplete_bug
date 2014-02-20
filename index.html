@@ -10,7 +10,7 @@
 <script type="text/javascript">
 
 function init() {
-  _.map(_.range(256), function(i) {
+  return _.map(_.range(256), function(i) {
     return {
       foo: i,
       bar: i*13
@@ -18,7 +18,9 @@ function init() {
   });
 }
 
-init();
+var x = init();
+debugger;
+console.log(x.length);
 
 </script>
 </body>
