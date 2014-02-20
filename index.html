@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+
+<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript">
+
+function init() {
+  _.map(_.range(256), function(i) {
+    return {
+      foo: i,
+      bar: i*13
+    }
+  });
+}
+
+init();
+
+</script>
+</body>
+</html> 
